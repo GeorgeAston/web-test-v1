@@ -14,9 +14,11 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-        <style>body{
-            background-color: black;
-            }
+        <style>
+            body{background-color: black;}
+            .container{display:flex;align-items: center;}
+            .logo{width: 50px; /*Adjust as necessary */ height:auto; margin-right: 10px;}
+            .text{font-size: 16px;}
         </style>
         <link rel="stylesheet" href="style.css">
         <nav>
@@ -24,16 +26,26 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <div class="nav-mobile w3-animate-right">
+            <div class="nav-mobile w3-animate-right" class="container">
                 <a href="about.html" style="color: aqua;">About Us</a>
                 <a href="contact.html" style="color: aqua;">Contact Us</a>
                 <a href="feedback.html" style="color: aqua;">Feedback about us</a>
                 <a href="gallery.html" style="color: aqua;">Our Gallery</a>
             </div>
+            <div class="container">
+                <img src="demo logo.jpg" alt="A logo resembling a tree, created with brush strokes to create a wavy effect." class="logo">
+                <div class="text" style="color: antiquewhite;">This is Orchard. </div>
+            </div>
         </nav>
-        <h1 style="color: antiquewhite;">Welcome! </h1>
+        <div class="container">
+            <img src="demo logo.jpg" alt="A logo resembling a tree, created with brush strokes to create a wavy effect. " class="logo">
+            <div class="text" style="color: antiquewhite;">This is Orchard. </div>
+        </div>
         <br>
         <p></p>
         <video src="aos_cover_vibrant.mp4" controls autoplay muted loop style="border: 2px solid white;">Apple animation</video>
     </body>
+    <footer>
+        <li><a href="sitemap.html">Sitemap</a></li>
+    </footer>
 </html>

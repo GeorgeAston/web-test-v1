@@ -4,25 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Update List</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="upd-styles.css">
     </head>
     <body>
         <h1>Update List</h1>
-        <p>The following list will inform you of all of the changes to our web pages for your information. Please ensure you have the timestamp to hand to compare it with this list. If a result is not available here yet, please do not panic, it should appear shortly. </p>
-        <p>Please also note that we cannot add update details to files older than the origin of this file. </p>
-        <hr>
+        <p style="color: white;">The following list will inform you of all of the changes to our web pages for your information. Please ensure you have the timestamp to hand to compare it with this list. If a result is not available here yet, please do not panic, it should appear shortly. </p>
+        <p style="color: white;">Please also note that we cannot add update details to files older than the origin of this file. </p>
+        <br>
         <!-- From hereon, please ensure that update headers use the H-3 tag and lower. Thank you. -->
-        <h3>UPD: 20240917 CN Odine</h3>
-        <h6>This update adds the upd-list.html file and includes all necessary information about changes older than the origin of the file. This update also includes Odine r2, as the file was not originally included in the Git transfer. </h6>
+        <button class="collapsible">UPD: 20240917 CN Odine</button>
+        <div class="content"><p>This update adds the upd-list.html file and includes all necessary information about changes older than the origin of the file. This update also includes Odine r2, as the file was not originally included in the Git transfer. </p></div>
         <hr>
-        <h3>ADD: 20240919 CN Rhenium</h3>
-        <h6>This update added the framework.html file, to set out the basics for our pages. </h6>
+        <button class="collapsible">ADD: 20240919 CN Rhenium</button>
+        <div class="content"><p>This update added the framework.html file, to set out the basics for our pages. </p></div>
         <hr>
-        <h3>UPD: 20240919 CN Vivianite</h3>
-        <h6>Index.html rebuild from framework</h6>
+        <button class="collapsible">UPD: 20240919 CN Vivianite</button>
+        <div class="content"><p>Index.html rebuild from framework</p></div>
         <hr>
-        <h3>UPD: 20240919 CN Hestia</h3>
-        <h6>Added style.css (for navigation) and updated home.html to reflect the new navigation bar. Other pages will reflect this change soon. </h6>
+        <button class="collapsible">UPD: 20240919 CN Hestia</button>
+        <div class="content"><p>Added style.css (for navigation) and updated home.html to reflect the new navigation bar. Other pages will reflect this change soon. </p></div>
         <hr>
+        <button class="collapsible">UPD: 20240919 CN Themis</button>
+        <div class="content"><p>Added the logo to the homepage, changed some parts in the home.html file and added the test.html file. </p></div>
+        <button class="collapsible">UPD: 20240919 CN Nautilus</button>
+        <div class="content">Made changes to: home.html, styles.css, upd-list.html. Added: sitemap.html and upd-styles.css. </div>
+        <!--  -->
+        <!--  -->
+        <!-- JavaScript for collapsibles -->
+        <script>
+            const collapsible = document.querySelector('.collapsible');
+            const content = document.querySelector('.content');
+            collapsible.addEventListener('click',function(){
+                this.classList.toggle('active');
+                if(content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                }else{
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        </script>
     </body>
 </html>
