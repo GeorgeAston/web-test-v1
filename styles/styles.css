@@ -1,0 +1,86 @@
+/* Main site styles */
+body{
+    background-color: black;
+}
+p {
+    color: antiquewhite;
+}
+/* Header tags*/
+h1{
+    color: antiquewhite;
+}
+h2 {
+    color: antiquewhite;
+}
+h3{
+    color: antiquewhite;
+}
+h4 {
+    color: #f9f9f9;
+}
+h5{
+    color: antiquewhite;
+}
+h6 {
+    color: antiquewhite;
+}
+
+/* Link colours */
+a:link {
+    color: #00fffc;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #ff0000;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #fbaaff;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/* Code for upd-list.html: Collapsible sections */
+/* Basic button style */
+.collapsible {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #555;
+}
+
+/* Initially hidden content with smooth transition */
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9f9f9;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+/* Adjust padding when content is visible */
+.collapsible.active + .content {
+    padding: 15px;
+}
